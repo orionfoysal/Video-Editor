@@ -16,7 +16,7 @@ ___________
 
 OR
 
-TimeStamp in HH:MM:SS format: [Working ? Need To Check]
+TimeStamp in HH:MM:SS format:
 ______________________
 |00:10:05 | 00:15:20 |
 |--------------------|

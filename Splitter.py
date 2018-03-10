@@ -37,14 +37,19 @@ def movieMerger():
     with open(csvPath, 'r') as file:
         reader = csv.reader(file)
         for row in reader:
-            startTime = float(row[0])
-            endTime = float(row[1])
+            if ':' in (row[0] and row[1]):
+                startTime = row[0]
+                endTime = row[1]
+            else:
+                startTime = float(row[0])
+                endTime = float(row[1])
             clip = video.subclip(startTime, endTime)
             clipsArray.append(clip)
 
     final_clip = concatenate_videoclips(clipsArray)
-    #final_clip.write_videofile(outputPath, fps=5, audio=False)
-    final_clip.write_videofile(outputPath, audio=False)
+    
+    # Disabling the audio by setting audio=False will speed up the process
+    final_clip.write_videofile(outputPath, audio=True)
 
     progress.stop()
     progress.place_forget()
