@@ -1,5 +1,7 @@
 Splitter.py is working. Tested on 31.12.2018.
 
+## Cut a video file at different time frames and combine them to generate a new video file
+
 Input: 
 
 1. Video in avi or mp4 format.
