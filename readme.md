@@ -2,8 +2,8 @@
 __Cut a video file at different time frames and combine them to generate a new video file. A CSV file contains the Start and End times data.__
 
 ### Input: 
-1. Video in avi or mp4 format.
-2. csv file with timestamps. 
+* Video in avi or mp4 format.
+* csv file with timestamps. 
 
 ### Example Valid CSV Formats:
 ```
@@ -25,6 +25,6 @@ ______________________
 ```
    
 ### Output:
-1. Output video file path
-2. Output will be saved in .mp4 format 
+* Show output video file path
+* Output will be saved in .mp4 format 
  
